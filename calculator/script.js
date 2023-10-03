@@ -1,10 +1,10 @@
 function calculate() {
-    // Kullanıcıların girdiği sayıları alın.
+    // Get numbers entered by users.
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
 
-    // Sayıları toplayın, çıkarın, çarpın veya bölün.
-    var operator = prompt("İşlemi seçin: +, -, * or /");
+    // Add, subtract, multiply or divide numbers.
+    var operator = prompt("Select action: +, -, * or /");
     var result;
     if (operator == "+") {
         result = parseFloat(num1) + parseFloat(num2);
@@ -16,7 +16,7 @@ function calculate() {
         result = num1 / num2;
     }
 
-    // Sonucu gösterin
+    // Show result
     document.getElementById("result").innerHTML = result;
 
 }
